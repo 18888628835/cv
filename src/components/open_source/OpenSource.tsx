@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { openSourceData } from "../../mock";
 const Wrapper = styled.section`
   a {
     text-decoration: underline;
@@ -9,6 +10,9 @@ const Wrapper = styled.section`
   }
   .symbol {
     margin: 0 5px;
+  }
+  .symbol:last-child {
+    display: none;
   }
   span {
     font-size: 13px;
@@ -21,35 +25,26 @@ const OpenSource = () => {
   return (
     <Wrapper>
       <h2>开源项目</h2>
-      <div className="source-list">
-        <h3>CSS3-animation</h3>
-        <div>
-          <span>
-            <a href="">会动的皮卡丘</a>
-          </span>
-          <span className="symbol">|</span>
-          <span>
-            <a href="">奔跑的大熊</a>
-          </span>
-          <span className="symbol">|</span>
-          <span>
-            <a href="">太极图</a>
-          </span>
-        </div>
-      </div>
-      <div className="source-list">
-        <h3>navigator</h3>
-        <p>一个简洁的网站导航，使用原生JS书写，支持键盘事件新增、打开网页等</p>
-        <div>
-          <span>
-            <a href="">简介图</a>
-          </span>
-          <span className="symbol">|</span>
-          <span>
-            <a href="">预览地址</a>
-          </span>
-        </div>
-      </div>
+      {openSourceData.map((item) => {
+        return (
+          <div className="source-list">
+            <h3>{item.name}</h3>
+            <p>{item.describe}</p>
+            <div className="source-item">
+              {item.list.map((i) => {
+                return (
+                  <>
+                    <span>
+                      <a href={i.link}>{i.name}</a>
+                    </span>
+                    <span className="symbol">|</span>
+                  </>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
     </Wrapper>
   );
 };

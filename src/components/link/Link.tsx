@@ -15,7 +15,7 @@ const Links = () => {
       <h2>鏈接</h2>
       <h4 className="links">
         <a href="https://juejin.cn/user/3940246036424679/posts">
-          个人博客-累积文章100+
+          个人博客-累计文章100+
         </a>
       </h4>
       <h4>

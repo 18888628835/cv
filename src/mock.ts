@@ -1,4 +1,4 @@
-// 工作经历
+// 工作履历
 export const ExperienceData = [
   {
     id: 1,
@@ -54,20 +54,21 @@ export const projectData = [
     description:
       "用网易云音乐Node.js接口处理的小程序音乐项目，支持网易云手机账号登录、歌曲和视频播放、歌单推荐、切换歌曲、用户基本信息展示、下拉刷新、上拉加载更多等",
     skill: "技术栈：Taro3.0、Typescript、linaria等",
-    link1: "",
     content1: "项目简介",
-    link2: "",
+    link1: "https://github.com/18888628835/one-tomato#one-tomato",
     content2: "源码地址",
+    link2: "https://github.com/18888628835/one-tomato",
   },
   {
     title: "SPA应用-Tally",
     description: "仿照「鲨鱼记账」做一个记账SPA小应用，特点是快速记账。",
     skill:
       "技术栈：Typescript、React、localStorage、自定义组件、React-Router、useReducer、Animate.css、Dayjs等",
-    link1: "",
     content1: "项目简介",
-    link2: "",
+    link1:
+      "https://github.com/18888628835/book_keeping/blob/main/README.md#%E7%AE%80%E4%BB%8B",
     content2: "预览地址",
+    link2: "https://18888628835.github.io/book_keeping/#/",
   },
   {
     title: "番茄闹钟",
@@ -75,10 +76,11 @@ export const projectData = [
       "简易番茄闹钟，实现用户注册、登录、记录Task、番茄闹钟、闹钟历史、任务历史等",
     skill:
       "技术栈：TypeScript、React、React-Router、Ant-Design、axios、Dayjs等",
-    link1: "",
     content1: "项目简介",
-    link2: "",
+    link1:
+      "https://github.com/18888628835/tomato/blob/main/README.md#%E7%AE%80%E4%BB%8B",
     content2: "预览地址",
+    link2: "https://18888628835.github.io/tomato/#/",
   },
 ];
 // 技能清单
@@ -90,9 +92,47 @@ export const skillsData = [
   { skillName: "小程序", percent: 85 },
   { skillName: "Vue", percent: 80 },
 ];
+// 个人详情
 export const detailData = [
   { title: "地址", message: "本科,杭州" },
   { title: "电话号码", message: "18888628835" },
   { title: "电子信箱", message: "qiuyanxi1992@gmail.com" },
   { title: "出生日期", message: "1992年" },
+];
+
+//开源项目
+export const openSourceData = [
+  {
+    name: "CSS3-animation",
+    describe: "",
+    list: [
+      {
+        link: "https://18888628835.github.io/pikachu/dist/index.html",
+        name: "会动的皮卡丘",
+      },
+      {
+        link: "https://18888628835.github.io/RunningBear/HTML/RunningBear.html",
+        name: "奔跑的大熊",
+      },
+      {
+        link: "https://18888628835.github.io/taiji/src/",
+        name: "太极图",
+      },
+    ],
+  },
+  {
+    name: "navigator",
+    describe:
+      "一个简洁的网站导航，使用原生JS书写，支持键盘事件新增、打开网页等",
+    list: [
+      {
+        link: "https://github.com/18888628835/navigation/issues/1",
+        name: "简介图",
+      },
+      {
+        link: "https://18888628835.github.io/navigation/dist/index.html",
+        name: "预览地址",
+      },
+    ],
+  },
 ];

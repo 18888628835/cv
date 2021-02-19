@@ -26,7 +26,7 @@ const Project = () => {
               <p>
                 <a href={item.link1}> {item.content1}</a>
                 <span>|</span>
-                <a href={item.content2}>{item.content2}</a>{" "}
+                <a href={item.link2}>{item.content2}</a>{" "}
               </p>
             </div>
           </section>

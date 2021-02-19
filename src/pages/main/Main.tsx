@@ -8,6 +8,8 @@ import Detail from "../../components/detail/Detail";
 import Experience from "../../components/layout/Experience";
 import WorkExperience from "../../components/experience/WorkExperience";
 import OpenSource from "../../components/open_source/OpenSource";
+import AboutMe from "../../components/aboutme/AboutMe";
+
 const Wrapper = styled.main`
   display: flex;
 `;
@@ -18,6 +20,7 @@ const Main = () => {
         <Detail />
         <Links />
         <Skill />
+        <AboutMe />
       </Aside>
       <Experience>
         <Project />
