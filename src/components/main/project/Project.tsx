@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { projectData } from "../../mock";
+import { projectData } from "../../../store/mock";
 const Wrapper = styled.section`
   h2 {
     margin-bottom: 15px;

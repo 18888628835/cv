@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { openSourceData } from "../../mock";
+import { openSourceData } from "../../../store/mock";
 const Wrapper = styled.section`
   a {
     text-decoration: underline;
@@ -27,7 +27,7 @@ const OpenSource = () => {
       <h2>开源项目</h2>
       {openSourceData.map((item) => {
         return (
-          <div className="source-list">
+          <div className="source-list" key={item.name}>
             <h3>{item.name}</h3>
             <p>{item.describe}</p>
             <div className="source-item">

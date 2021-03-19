@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { detailData } from "../../mock";
+import { detailData } from "../../../store/mock";
 const Wrapper = styled.section`
   /* 详情 */
   &.detail-wrap {

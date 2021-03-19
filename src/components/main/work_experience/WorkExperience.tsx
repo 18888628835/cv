@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ExperienceData } from "../../mock";
+import { ExperienceData } from "../../../store/mock";
 const Wrapper = styled.section`
   > div {
     margin-bottom: 35px;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import avatar from "../../static/avatar.png";
+import avatar from "../../../static/avatar.png";
 
 const Wrapper = styled.section`
   &.avatar {

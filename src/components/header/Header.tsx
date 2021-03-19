@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Avatar from "../../components/header/Avatar";
-import Name from "../../components/header/Name";
+import Avatar from "./avatar/Avatar";
+import Name from "./name/Name";
 
 const Wrapper = styled.header`
   display: flex;

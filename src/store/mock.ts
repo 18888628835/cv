@@ -3,7 +3,7 @@ export const ExperienceData = [
   {
     id: 1,
     title: "上海通办信息「东方通泰」,业务项目经理",
-    date: "2018年11月-至今",
+    date: "2018年11月-2021年3月",
     project: "主要负责项目：1.衢州市空间项目 2.北京市企业空间",
     Introduction: "——项目主要建设政务网基础信息库融合,实现企业信息资源汇聚",
     work: "主要工作内容",
@@ -58,17 +58,6 @@ export const projectData = [
     link1: "https://github.com/18888628835/one-tomato#one-tomato",
     content2: "源码地址",
     link2: "https://github.com/18888628835/one-tomato",
-  },
-  {
-    title: "SPA应用-Tally",
-    description: "仿照「鲨鱼记账」做一个记账SPA小应用，特点是快速记账。",
-    skill:
-      "技术栈：Typescript、React、localStorage、自定义组件、React-Router、useReducer、Animate.css、Dayjs等",
-    content1: "项目简介",
-    link1:
-      "https://github.com/18888628835/book_keeping/blob/main/README.md#%E7%AE%80%E4%BB%8B",
-    content2: "预览地址",
-    link2: "https://18888628835.github.io/book_keeping/#/",
   },
   {
     title: "番茄闹钟",
@@ -132,6 +121,38 @@ export const openSourceData = [
       {
         link: "https://18888628835.github.io/navigation/dist/index.html",
         name: "预览地址",
+      },
+    ],
+  },
+  {
+    name: "SPA应用-Tally",
+    describe:
+      "仿照「鲨鱼记账」做一个记账SPA小应用，特点是快速记账。技术栈：TypeScript、React、React-Router、Ant-Design、axios、Dayjs等",
+    list: [
+      {
+        link:
+          "https://github.com/18888628835/book_keeping/blob/main/README.md#%E7%AE%80%E4%BB%8B",
+        name: "项目简介",
+      },
+      {
+        link: "https://18888628835.github.io/book_keeping/#/",
+        name: "预览地址",
+      },
+    ],
+  },
+];
+//连接数据
+export const linkData = [
+  {
+    title: "链接",
+    message: [
+      {
+        link: "https://juejin.cn/user/3940246036424679/posts",
+        info: "个人博客-累计文章100+",
+      },
+      {
+        link: "https://github.com/18888628835?tab=repositories",
+        info: "GitHub-近半年提交250+",
       },
     ],
   },

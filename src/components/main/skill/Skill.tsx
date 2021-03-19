@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Progress } from "antd";
-import { skillsData } from "../../mock";
+import { skillsData } from "../../../store/mock";
 const Wrapper = styled.section`
   &.skills {
     margin-bottom: 52px;
