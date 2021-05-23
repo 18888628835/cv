@@ -6,6 +6,7 @@ const Wrapper = styled.section`
     margin-bottom: 52px;
     .links {
       margin-bottom: 15px;
+      text-decoration: underline;
     }
   }
 `;

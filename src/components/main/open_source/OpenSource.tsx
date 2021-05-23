@@ -24,14 +24,14 @@ const Wrapper = styled.section`
 const OpenSource = () => {
   return (
     <Wrapper>
-      <h2>开源项目</h2>
-      {openSourceData.map((item) => {
+      <h2>业余练手</h2>
+      {openSourceData.map(item => {
         return (
           <div className="source-list" key={item.name}>
             <h3>{item.name}</h3>
             <p>{item.describe}</p>
             <div className="source-item">
-              {item.list.map((i) => {
+              {item.list.map(i => {
                 return (
                   <>
                     <span>

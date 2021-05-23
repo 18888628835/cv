@@ -11,12 +11,15 @@ const Wrapper = styled.section`
   span {
     margin: 0 5px;
   }
+  .address {
+    color: #0092c6;
+  }
 `;
 const Project = () => {
   return (
     <Wrapper>
-      <h2>项目经历</h2>
-      {projectData.map((item) => {
+      <h2>业余项目</h2>
+      {projectData.map(item => {
         return (
           <section key={item.title}>
             <h3>{item.title}</h3>
@@ -24,9 +27,13 @@ const Project = () => {
               <p>{item.description}</p>
               <p>{item.skill}</p>
               <p>
-                <a href={item.link1}> {item.content1}</a>
+                <a className="address" href={item.link1}>
+                  {item.content1}
+                </a>
                 <span>|</span>
-                <a href={item.link2}>{item.content2}</a>{" "}
+                <a className="address" href={item.link2}>
+                  {item.content2}
+                </a>
               </p>
             </div>
           </section>

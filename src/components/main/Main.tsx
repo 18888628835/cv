@@ -23,8 +23,8 @@ const Main = () => {
         <AboutMe />
       </Aside>
       <Experience>
-        <Project />
         <WorkExperience />
+        <Project />
         <OpenSource />
       </Experience>
     </Wrapper>

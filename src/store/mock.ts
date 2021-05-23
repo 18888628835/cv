@@ -2,7 +2,7 @@
 export const ExperienceData = [
   {
     id: 1,
-    title: "上海通办信息「东方通泰」,业务项目经理",
+    title: "上海通办信息,业务项目经理",
     date: "2018年11月-2021年3月",
     project: "主要负责项目：1.衢州市空间项目 2.北京市企业空间",
     Introduction: "——项目主要建设政务网基础信息库融合,实现企业信息资源汇聚",
@@ -20,24 +20,11 @@ export const ExperienceData = [
     result: ["带领团队获得衢州市政府表扬信2封", "获得公司勇挑重担奖、金点子奖"],
   },
   {
-    id: 2,
-    title: "宁波奇星网络科技有限公司,风控组长",
-    date: "2017年9月-2018年7月",
-    project: "负责业务数据汇报、整理,业务培训、业务流程梳理、优化等",
-    Introduction: "",
-    work: "",
-    workContent: "",
-    title1: "",
-    title2: "",
-    gains: [],
-    result: [],
-  },
-  {
     id: 3,
-    title: "宁波大宗商品交易所富邦运营中心,风控专员",
-    date: "2014年7月-2017年8月",
+    title: "宁波大宗商品交易所,风控组长",
+    date: "2014年7月-2018年7月",
     project:
-      "主要负责风控数据汇总、统计、上报,对接大宗商品交易所,审核客户资料等",
+      "主要负责风控数据汇总、统计、上报,对接大宗商品交易所,审核客户资料、业务培训、业务流程梳理、优化等",
     Introduction: "获得优秀员工奖励",
     work: "",
     workContent: "",
@@ -49,6 +36,18 @@ export const ExperienceData = [
 ];
 // 项目经历
 export const projectData = [
+  {
+    title: "UI组件-R-design",
+    description:
+      "工作中常用组件的封装，例如Alert、Button、Transition、Loading、AutoComplete 等组件",
+    skill:
+      "技术栈： React、Typescript、storybook、Animate.css、styled-components等",
+    content1: "源码地址",
+    link1: "https://github.com/18888628835/r-design",
+    content2: "预览地址",
+    link2:
+      "https://18888628835.github.io/r-design/storybook-static/?path=/docs/example-%E9%80%9A%E7%94%A8%E5%8A%A8%E7%94%BBtransition--transition-alert",
+  },
   {
     title: "微信小程序-one番茄",
     description:
@@ -92,7 +91,22 @@ export const detailData = [
 //开源项目
 export const openSourceData = [
   {
-    name: "CSS3-animation",
+    name: "SPA应用-Tally-原生 React",
+    describe:
+      "仿照「鲨鱼记账」做一个记账SPA小应用，特点是快速记账。技术栈：TypeScript、React、React-Router、Ant-Design、axios、Dayjs等",
+    list: [
+      {
+        link: "https://github.com/18888628835/book_keeping/blob/main/README.md#%E7%AE%80%E4%BB%8B",
+        name: "项目简介",
+      },
+      {
+        link: "https://18888628835.github.io/book_keeping/#/",
+        name: "预览地址",
+      },
+    ],
+  },
+  {
+    name: "CSS3-animation-原生 css",
     describe: "",
     list: [
       {
@@ -110,7 +124,7 @@ export const openSourceData = [
     ],
   },
   {
-    name: "navigator",
+    name: "navigator-原生 js",
     describe:
       "一个简洁的网站导航，使用原生JS书写，支持键盘事件新增、打开网页等",
     list: [
@@ -120,22 +134,6 @@ export const openSourceData = [
       },
       {
         link: "https://18888628835.github.io/navigation/dist/index.html",
-        name: "预览地址",
-      },
-    ],
-  },
-  {
-    name: "SPA应用-Tally",
-    describe:
-      "仿照「鲨鱼记账」做一个记账SPA小应用，特点是快速记账。技术栈：TypeScript、React、React-Router、Ant-Design、axios、Dayjs等",
-    list: [
-      {
-        link:
-          "https://github.com/18888628835/book_keeping/blob/main/README.md#%E7%AE%80%E4%BB%8B",
-        name: "项目简介",
-      },
-      {
-        link: "https://18888628835.github.io/book_keeping/#/",
         name: "预览地址",
       },
     ],
