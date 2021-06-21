@@ -146,11 +146,11 @@ export const linkData = [
     message: [
       {
         link: "https://juejin.cn/user/3940246036424679/posts",
-        info: "个人博客-累计文章100+",
+        info: "个人博客-分享文章100+",
       },
       {
-        link: "https://github.com/18888628835?tab=repositories",
-        info: "GitHub-近半年提交250+",
+        link: "https://github.com/18888628835",
+        info: "此处查看我的GitHub",
       },
     ],
   },
