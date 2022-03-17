@@ -1,6 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { ExperienceData } from "../../../store/mock";
+/*
+ * @Author: 邱彦兮
+ * @Date: 2021-02-06 14:33:22
+ * @LastEditors: 邱彦兮
+ * @LastEditTime: 2022-03-17 00:04:40
+ * @FilePath: /cv/src/components/main/work_experience/WorkExperience.tsx
+ */
+import React from 'react';
+import styled from 'styled-components';
+import { ExperienceData } from '../../../store/mock';
 const Wrapper = styled.section`
   > div {
     margin-bottom: 35px;
@@ -11,7 +18,7 @@ const Wrapper = styled.section`
       margin-bottom: 10px;
     }
     ul p::before {
-      content: "⋅";
+      content: '⋅';
       display: inline-block;
       margin-right: 5px;
     }
@@ -24,8 +31,8 @@ const Wrapper = styled.section`
 const WorkExperience = () => {
   return (
     <Wrapper>
-      <h2>工作履历</h2>
-      {ExperienceData.map((item) => {
+      <h2>项目经历</h2>
+      {ExperienceData.map(item => {
         return (
           <div key={item.id}>
             <h3>{item.title}</h3>
@@ -36,7 +43,7 @@ const WorkExperience = () => {
             <p>{item.workContent}</p>
             <p>{item.title1}</p>
             <ul>
-              {item.gains.map((i) => {
+              {item.gains.map(i => {
                 return (
                   <li key={i}>
                     <p>{i}</p>
@@ -46,7 +53,7 @@ const WorkExperience = () => {
             </ul>
             <p>{item.title2}</p>
             <ul>
-              {item.result.map((i) => {
+              {item.result.map(i => {
                 return (
                   <li key={i}>
                     <p>{i}</p>
