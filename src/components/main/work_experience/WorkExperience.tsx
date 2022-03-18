@@ -2,7 +2,7 @@
  * @Author: 邱彦兮
  * @Date: 2021-02-06 14:33:22
  * @LastEditors: 邱彦兮
- * @LastEditTime: 2022-03-17 00:04:40
+ * @LastEditTime: 2022-03-18 23:05:11
  * @FilePath: /cv/src/components/main/work_experience/WorkExperience.tsx
  */
 import React from 'react';
@@ -17,14 +17,9 @@ const Wrapper = styled.section`
     h4 {
       margin-bottom: 10px;
     }
-    ul p::before {
-      content: '⋅';
-      display: inline-block;
-      margin-right: 5px;
-    }
-    ul p {
-      padding-left: 21px;
-      margin-bottom: 3px;
+    ol {
+      list-style: disc;
+      margin-left: 25px;
     }
   }
 `;
@@ -42,7 +37,7 @@ const WorkExperience = () => {
             <p>{item.work}</p>
             <p>{item.workContent}</p>
             <p>{item.title1}</p>
-            <ul>
+            <ol>
               {item.gains.map(i => {
                 return (
                   <li key={i}>
@@ -50,9 +45,9 @@ const WorkExperience = () => {
                   </li>
                 );
               })}
-            </ul>
+            </ol>
             <p>{item.title2}</p>
-            <ul>
+            <ol>
               {item.result.map(i => {
                 return (
                   <li key={i}>
@@ -60,7 +55,7 @@ const WorkExperience = () => {
                   </li>
                 );
               })}
-            </ul>
+            </ol>
           </div>
         );
       })}

@@ -1,3 +1,10 @@
+/*
+ * @Author: 邱彦兮
+ * @Date: 2021-02-06 13:30:25
+ * @LastEditors: 邱彦兮
+ * @LastEditTime: 2022-03-18 23:06:31
+ * @FilePath: /cv/src/components/main/project/Project.tsx
+ */
 import React from 'react';
 import styled from 'styled-components';
 import { projectData } from '../../../store/mock';
@@ -14,14 +21,9 @@ const Wrapper = styled.section`
   .address {
     color: #0092c6;
   }
-  ul p::before {
-    content: '⋅';
-    display: inline-block;
-    margin-right: 5px;
-  }
-  ul p {
-    padding-left: 21px;
-    margin-bottom: 3px;
+  ol {
+    list-style: disc;
+    margin-left: 25px;
   }
 `;
 const Project = () => {
@@ -34,13 +36,13 @@ const Project = () => {
             <h3>{item.title}</h3>
             <div className='description'>
               <p>{item.description}</p>
-              <ul>
+              <ol>
                 {item.gains.map(label => (
-                  <ol key={label}>
+                  <li key={label}>
                     <p>{label}</p>
-                  </ol>
+                  </li>
                 ))}
-              </ul>
+              </ol>
               <p>{item.skill}</p>
               <p>
                 <a
