@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { linkData } from "../../../store/mock";
+import React from 'react'
+import styled from 'styled-components'
+import { linkData } from '../../../store/mock'
 const Wrapper = styled.section`
   &.link-wrap {
     margin-bottom: 52px;
@@ -9,7 +9,7 @@ const Wrapper = styled.section`
       text-decoration: underline;
     }
   }
-`;
+`
 
 const Links = () => {
   return (
@@ -20,16 +20,22 @@ const Links = () => {
             <h2>{title}</h2>
             {message.map(({ link, info }) => {
               return (
-                <h4 key={info} className="links">
-                  <a href={link}>{info}</a>
+                <h4 key={info}>
+                  {link ? (
+                    <a className="links" href={link}>
+                      {info}
+                    </a>
+                  ) : (
+                    <span>{info}</span>
+                  )}
                 </h4>
-              );
+              )
             })}
           </div>
-        );
+        )
       })}
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Links;
+export default Links

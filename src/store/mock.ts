@@ -1,23 +1,43 @@
 // 工作履历
 export const ExperienceData = [
   {
+    id: 0,
+    title: '全栈开发(偏前端),日本Dashcomb,杭州 — 2022.4 - 至今',
+    date: 'Dashcomb低代码平台',
+    project: '',
+    Introduction: '技术栈：后端 Adonis、前端 Next.js、测试 Jest、AWS云服务、Recoil、Docker等',
+    work: '项目描述',
+    workContent: '初创团队，主要做Sass后台和H5页面编辑的低代码平台',
+    title1: '工作内容',
+    title2: '',
+    gains: [
+      '参与数据响应方案的设计，并基于方案实现组件、数据、面板联动功能。例如 Table-column自动生成和拖拽、Table宽度拉拽、JavaScript 代码执行器、Events等功能',
+      '所有配置面板以及公用配置面板的封装，自定义form-schema结构',
+      '所有自用组件的表单校验工作（非 Antd 自带）',
+      '用户自定义字体、Material 上传等功能的设计和实现',
+      '负责前端数据的版本兼容，主要做数据库数据的 Migration【后端方向】',
+      '根据 Webhooks 实现 Twitter 用户数据的业务逻辑分析、数据库 CRUD 等工作【后端方向】',
+      '基于 Antd、Echarts等组件库的二次封装，完成所有自用组件的开发',
+      'Jest 单元测试',
+    ],
+    result: [],
+  },
+  {
     id: 1,
-    title: '前端开发,杭州秦云数字,杭州 — 2021.4 - Now',
+    title: '前端开发,杭州秦云数字,杭州 — 2021.4 - 2022.4',
     date: '云南省搬迁安置管理平台',
     project: '',
-    Introduction:
-      '技术栈：ant design、Echarts、umi、proComponents、React、TypeScript、redux 等',
+    Introduction: '技术栈：TypeScript、hooks、Antd-design、Echarts、Dumi等',
     work: '项目描述',
     workContent:
       '为云南省发改委开发的用于搬迁安置业务的后台审批、工作流程、权限管理、财务管理等多条业务线的ERP系统，共有 300余个路由，总投入团队人员30+，目前项目已验收进入维护阶段。',
-    title1: '工作收获',
+    title1: '工作内容',
     title2: '',
     gains: [
-      '推广团队使用 TypeScript 、hooks 等技术，提升了开发质量和效率',
-      '开发政务大屏，支持地图切换、地区下钻、动态定点、轮播表等功能，提高对 Echarts的实践能力',
-      '封装公司B端部分业务组件，提升开发效率',
-      '全年共完成 50+前端页面，占总量的 1/4，熟悉ant design等组件式开发',
-      '探索前端性能优化有关技术，提升约 20%的页面性能',
+      '开发完整的政务大屏，支持地图切换、地区下钻、动态定点、轮播表等功能',
+      '搭建前端组内部使用的业务组件库,并做了ESlint, ChangeLog,Commit 规范,github action等工作',
+      '手写React原生组件—— 大屏适配器、Dialog、大屏滚动列表、虚拟列表、ResizableBox 等，并运用于项目中',
+      '研究并完成前端性能优化工作',
       '最佳新人员工奖',
     ],
     result: [],
@@ -59,43 +79,37 @@ export const ExperienceData = [
   //   gains: [],
   //   result: [],
   // },
-];
+]
 // 项目经历
 export const projectData = [
   {
-    title: '全栈项目-番茄记账',
-    description:
-      '记账 web app，前后端开发、UI 设计、产品设计均由自己完成。实现注册登陆、账单CRUD、全年账单、月度账单、账单占比分析、个人信息修改等功能模块，目前已上线部署在阿里云服务器',
-    skill: '技术栈：Egg、Nodejs、sequelize、React hooks、redux等',
-    content1: '体验地址',
+    title: '番茄记账',
+    description: '用于记账的 web app，前后端开发、UI 设计、产品设计均由自己完成',
+    skill: '',
+    content1: '源码地址',
     gains: [
-      '提高对 Nodejs的熟练程度',
-      '利用 nginx + http cache 缓存静态资源，提高静态资源二次请求的速度',
-      '利用redux缓存后端数据，减少 HTTP 请求次数，缓解服务器压力',
-      '利用koa 洋葱模型，由全局异常中间件统一处理所有接口数据',
+      '由于云服务器已到期，目前将前后端代码用 git-modules 的形式上传github,需要配合 Docker 开启',
+      '技术栈：Docker-Compose、Nginx、HTTP2、React、Egg、Sequelize等',
     ],
-    link1: 'http://123.56.105.114/',
+    link1: 'https://github.com/18888628835/account-book',
     content2: '图片预览',
-    link2:
-      'https://github.com/18888628835/account-book-front-end/tree/main#account-book-front-end',
+    link2: 'https://github.com/18888628835/account-book-front-end/tree/main#account-book-front-end',
   },
-];
+]
 // 技能清单
 export const skillsData = [
   { skillName: 'React', percent: 85 },
   { skillName: 'TypeScript', percent: 80 },
   { skillName: 'Nodejs', percent: 60 },
-  { skillName: 'Echarts', percent: 75 },
-  { skillName: 'Dva.js', percent: 80 },
-  { skillName: '小程序', percent: 75 },
-];
+  { skillName: 'Jest', percent: 75 },
+]
 // 个人详情
 export const detailData = [
   { title: '地址', message: '本科,杭州' },
   { title: '电话号码', message: '18888628835' },
   { title: '电子信箱', message: 'qiuyanxi1992@gmail.com' },
   { title: '出生日期', message: '1992年' },
-];
+]
 
 //开源项目
 export const openSourceData = [
@@ -133,20 +147,32 @@ export const openSourceData = [
       },
     ],
   },
-];
+]
 //连接数据
 export const linkData = [
   {
-    title: 'Blog',
+    title: '简介',
     message: [
       {
-        link: 'https://github.com/18888628835',
-        info: 'github-博客200+篇',
+        link: '',
+        info: 'PMP',
       },
       {
         link: 'https://juejin.cn/user/3940246036424679/posts',
-        info: '掘金',
+        info: '掘金优秀创作者',
+      },
+      {
+        link: 'https://github.com/18888628835',
+        info: 'GitHub',
+      },
+      {
+        link: 'https://18888628835.github.io/react-drag-resizable/',
+        info: 'npm贡献:react-drag-resizable',
+      },
+      {
+        link: 'https://qiuyanxi.com',
+        info: 'https://qiuyanxi.com',
       },
     ],
   },
-];
+]
